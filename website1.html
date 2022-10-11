@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('olympics.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .left {
+            border: none;
+            display: inline;
+            position: absolute;
+            left: 10px;
+        }
+        .left img{
+            height: 85px;
+            width:85px;
+        }
+
+        .mid {
+            border: none;
+            display: block;
+            width: 40%;
+            margin: auto;
+        }
+
+        .right {
+            border: none;
+            position: absolute;
+            right: 65px;
+            top: 10px;
+        }
+
+        .nav li {
+            display:inline-block;
+        }
+        .nav li a{
+            text-decoration: none;
+            padding: 32px;
+        }
+        .nav li a:hover active{
+            text-decoration: underline;
+            color: red;
+        }
+        .btn{
+            padding: 5px;
+            border-radius: 10px;
+            margin:12px 12px;
+            cursor: pointer;
+            background-color: bisque;
+            border: 2px solid grey;
+            
+        }
+        .btn::hover{
+            background-color: red;
+        }
+        .box{
+            border:none;
+            margin:80px 2px;
+            padding:85px;
+            width:26%;
+            position: absolute;
+            left:10px;
+            border-radius: 10px;
+            
+        }
+        .form input{
+            text-align: center;
+            display: block;
+            width:201px;
+            margin: 10px auto;
+            padding:8px;
+            border-radius: 10px;
+        }
+        .box h1{
+            text-align: center;
+        }
+        .box button{
+            display: block;
+            width:50px;
+            margin:auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="oly.jpg">
+        
+        </div>
+        <div class="mid">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Aboutus</a></li>
+                    <li><a href="#">Contactus</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Callus</button>
+            <button class="btn">Emailus</button>
+        </div>
+        <div class="box">
+            <h1>Join the Sports Club</h1>
+            <form action="noaction.php">
+                <div class="form">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Select Your Category">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter Your Sport">
+                </div>
+                <div>
+                <button class="btn">submit</button>
+            </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>
